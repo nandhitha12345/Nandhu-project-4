@@ -1,0 +1,24 @@
+# main.py
+
+# --- Built-in Modules ---
+import math
+import datetime
+import random
+
+print("Square root of 16:", math.sqrt(16))
+print("Current date and time:", datetime.datetime.now())
+print("Random number between 1 and 10:", random.randint(1, 10))
+
+# --- Custom Module from Package ---
+import custom_module
+
+print("Addition:", custom_module.add(5, 7))
+print("Greeting:", custom_module.greet("Alice"))
+print("Square:", custom_module.square(6))
+
+# --- Using dir() and help() ---
+print("\nAvailable functions in math module:")
+print(dir(math))  # Lists all attributes in math module
+
+print("\nHelp on random module:")
+help(random)      # Shows help for random module
